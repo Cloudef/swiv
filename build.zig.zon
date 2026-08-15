@@ -1,0 +1,28 @@
+.{
+    .name = .swiv,
+    .version = "0.15.2",
+    .dependencies = .{
+        .shimizu = .{
+            .url = "git+https://git.klaji.dev/klaji/shimizu?ref=0.1.1#ded824ed136179ef5fd0d49a0138d02ef7fbd755",
+            .hash = "shimizu-0.1.1-irfMUUAwBAD8QD5BxR2ojneUIYRA5-LbOgGRcuXQzZXj",
+        },
+        .wayland = .{
+            .url = "https://gitlab.freedesktop.org/wayland/wayland/-/archive/1.23.1/wayland-1.23.1.tar.gz",
+            .hash = "N-V-__8AAJC3GAC2LeGXShVNoV0oWVW9T293JVzmx0kY5KVa",
+        },
+        .@"wayland-protocols" = .{
+            .url = "https://gitlab.freedesktop.org/wayland/wayland-protocols/-/archive/1.38/wayland-protocols-1.38.tar.gz",
+            .hash = "N-V-__8AAPSiCwBmhGfdDQlw65XlO55QP1pogBUo1ZeGUv_C",
+        },
+        .known_folders = .{
+            .url = "git+https://github.com/ziglibs/known-folders.git#83d39161eac2ed6f37ad3cb4d9dd518696ce90bb",
+            .hash = "known_folders-0.0.0-Fy-PJv3LAAABBRVoZWVrKZdyLoUfl5VRY5fqRRRdnF5L",
+        },
+        .dekoodaaja = .{
+            .url = "git+https://github.com/sorvi-platform/dekoodaaja.git#40d1b7abbfebba4aa7dc69446132dfcb6c923392",
+            .hash = "dekoodaaja-0.16.0-DEKOODEkAABYKRPEH8LhNsthdZmvhG-AmB6Ttsym5Iiu",
+        },
+    },
+    .paths = .{""},
+    .fingerprint = 0x429aa5c5a83ee88,
+}
