@@ -208,7 +208,7 @@ fn updateViewport(self: *@This(), update: enum { alone, with_main }) !void {
 
     if (dst_w <= 0 or dst_h <= 0 or clip_w <= 0 or clip_h <= 0) {
         // Surface is completely out of bounds
-        try self.image_surface.attach(self.conn, null, 0, 0);
+        // try self.image_surface.attach(self.conn, null, 0, 0);
     } else {
         // Convert back to surface coordinates
         const scale_x = src_w / dst_w;
@@ -218,7 +218,7 @@ fn updateViewport(self: *@This(), update: enum { alone, with_main }) !void {
         const src_cw = @max(@min(@round(clip_w * scale_x), src_w - src_x0), 1);
         const src_ch = @max(@min(@round(clip_h * scale_y), src_h - src_y0), 1);
 
-        try self.image_surface.attach(self.conn, self.image_buffer.wl, 0, 0);
+        // try self.image_surface.attach(self.conn, self.image_buffer.wl, 0, 0);
 
         try self.image_subsurface.set_position(
             self.conn,
